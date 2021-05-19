@@ -1,0 +1,1033 @@
+
+https://medium.com/marmicode/angular-lazy-loading-without-router-471166580c86
+
+As part of Project Deliverables, He contributed a major role while Rebranding the overall UI and many new functionalities of My Account(Servicing) application.
+
+Added Google Analytics and AppInsights to track custom events for My Account(Servicing) application.
+
+He contributed to Chubb Studio UI development by giving knowledge Transfer and mentoring UI team members.
+
+He certified in Microsoft Azure Fundamental Certification.
+
+And he actively participate in taking Interviews for Experience and Internship candidates for bringing the right talent into Chubb Organisation.
+
+
+As part of business deliverables, Contributed a major role while rebranding UI and new functionalities of the My Account(Servicing) application.
+
+Proactively worked on ADB2C pages and configuration in My Account(Servicing) application for different regions and got appreciation from the onsite team members.
+
+And playing a key role by creating custom events to Google Analytics and AppInsights for My Account(Servicing) application as per business requirement.
+
+As part of development goals, Certified in Microsoft Azure Fundamentals Certification and received certification from Microsoft.
+
+And contributed to Chubb Studio UI development by giving knowledge transfer and mentoring UI team members and reviewing PR's for efficient coding standards and quality.
+
+Actively participate in taking Interviews for Experience and Internship candidates for bringing the right talent into Chubb Organization and parallelly reached development goal plans.
+
+
+Bacup of mock data calling
+
+
+@Injectable()
+export class PoliciesMock extends HttpMock {
+  constructor() {
+    super(
+      environment.api.policies,
+      'POST',
+      () =>
+        new HttpResponse({
+          body: PolicySearchMockData,
+          status: 200,
+          statusText: 'OK',
+        })
+    );
+  }
+}
+
+this._authenticationService.login({ emailId: this.loginUserEmail,country:this._tenantStructureService.getPathContextBy('country') });
+
+npm install @ngrx/schematics
+
+npm install @ngrx/store --save
+
+npm install @ngrx/store-devtools --save
+
+ng generate @ngrx/schematics:store State --root --module app.module.ts
+
+ng generate @ngrx/schematics:reducer Zipcode --group
+
+ng generate @ngrx/schematics:action Zipcode --group
+
+for effects async purpose
+-------------------------
+
+npm install @ngrx/effects --save
+
+>ng generate @ngrx/schematics:effect shopByCategory --module app.module --group
+
+ionic g c components/catergories
+
+ionic g page pages/customerDashboard
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write;
+    }
+  }
+}
+
+for img storage tab
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+
+
+
+Roles and Responsibilies
+------------------------
+
+Lazy Loading
+AuthGuard with canActivate and resolve
+Http Interceptor
+Interfaces,enums
+ng-container,ng-template
+shared services
+rxjs operators
+ngrx
+
+Design Patterns
+---------------
+
+https://www.velotio.com/engineering-blog/design-patterns-in-es6
+
+
+
+Angular 4 -- HttpInterceptor
+Angular5 -- Service workers (PWA)
+Angular6 -- Internationlization(i18n)
+Angular7 --Virtual Scrolling, Drag and Drop
+Angular 8 -- Web Workers,Lazy Loading,Ivg Engine(Starting phase), Angular Firebase
+Angular 9 --- IVY as a default Compiler, ProvidedIn: 'platform'
+
+
+
+
+
+Node JS cum expressJS
+
+https://github.com/mosh-hamedani/vidly-api-node
+
+
+
+
+
+JAVASCRIPT
+
+prototype -->  https://www.w3schools.com/js/js_object_prototypes.asp
+
+__________________________________________________________________________________________________________________________
+
+Closure ---> https://dmitripavlutin.com/simple-explanation-of-javascript-closures/
+
+As we know, the variables that are defined in functions, have local scope. We can't access them from outside of the function.
+
+Problem 1:
+
+local variables are created when the function is called and they will be destroyed when the function's task is finished. It means local variables have shorter life time than global variables. We may use global variables to overcome that issue.
+
+Global variables are available when the program starts and are destroyed when it ends. They are also available throughout the program.
+
+Problem 2:
+
+Since global variables are accessible throughout the program, they are prone to change from everywhere.
+
+What do we want?
+
+We want to have data persistence + data encapsulation.
+
+We can achieve them by using Closures. By using a closure we can have private variables that are available even after a function's task is finished.
+__________________________________________________________________________________________________________________________
+
+call vs apply vs bind ---> https://medium.com/@leonardobrunolima/javascript-tips-apply-vs-call-vs-bind-d738a9e8b4e1
+
+callback ---> https://www.w3schools.com/js/js_callback.asp#:~:text=A%20callback%20is%20a%20function,after%20another%20function%20has%20finished
+
+promise vs observable --> https://www.google.com/search?q=observables+vs+promises&newwindow=1&rlz=1C1GCEV_enUS904US904&sxsrf=ALeKk01Cl8DiU7vak13cs6uyzTQNvjPpIQ:1614317502635&tbm=isch&source=iu&ictx=1&fir=BJBmL_pBVjPPzM%252C-VlaONLZ94yHNM%252C_&vet=1&usg=AI4_-kRMwUcjVd-cb2BxgCZPiz9MvDm_VA&sa=X&ved=2ahUKEwjI9rGq6YbvAhWtzDgGHWyjDioQ_h16BAgXEAE#imgrc=pVe1_vDFUqSzyM
+
+Observables -- RXJS,Asynchronous purpose
+Promises -- ES6,Asynchronous purpose
+Async & Await -- ES8 Syntactic sugar of promise,Asynchronous purpose
+
+More Info on Promise and async and await --> https://betterprogramming.pub/should-i-use-promises-or-async-await-126ab5c98789#:~:text=Thumb%20Rules%20for%20async%2Dawait&text=async%20functions%20return%20a%20promise,is%20passed%20through%20a%20promise.&text=await%20only%20blocks%20the%20code%20execution%20within%20the%20async%20function.
+
+IIFE --> https://js.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174
+
+Event capturing --> Top to bottom
+Event Bubbling --> Bottom to top
+The difference is the order of the execution of the event handlers.
+
+If you want to stop the event bubbling, this can be achieved by the use of the event. stopPropagation() method
+
+Event Currying --> https://www.tutorialspoint.com/what-is-currying-in-javascript#:~:text=Currying%20is%20a%20technique%20of,function%20which%20takes%20the%20third
+
+
+Rest parameter vs spread operator ---> https://scotch.io/bar-talk/javascripts-three-dots-spread-vs-rest-operators543
+
+The spread operator allows us to expand elements. With rest parameters we were able to get a list of arguments into an array. spread operators however, let us unpack elements in an array to single/individual arguments.
+
+
+splice --> https://www.w3schools.com/jsref/jsref_splice.asp
+
+slice --> https://www.w3schools.com/jsref/jsref_slice_array.asp
+
+
+split --> https://www.w3schools.com/jsref/jsref_split.asp
+
+
+@Input and @Output 
+
+https://stackblitz.com/edit/input-output-angular?file=src%2Fapp%2Fchild%2Fchild.component.ts
+
+
+Angular
+-------
+
+Dependency Injection ---> https://angular.io/guide/dependency-injection
+
+Dependency injection --> Dependency injection is the ability to add the functionality of components at runtime.
+
+
+Injection Token --> https://www.inversionofcontrol.co.uk/injection-tokens-in-angular/
+
+what is viewchild and viewchildren in angular
+
+Working with @ViewChildren is similar to @ViewChild , but the difference between the two is @ViewChildren provides a list of element references rather than returning a single reference
+
+example in this link --> https://thetiwari-tiwari01.medium.com/angular-8-viewchild-and-viewchildren-difference-in-details-with-examp-98ba5204a4a9
+
+
+viewChild vs contentChild
+
+ViewChild is used to select an element from component's template while ContentChild is used to select projected content.
+
+viewChildren vs contentChildren
+
+https://stackoverflow.com/questions/34326745/whats-the-difference-between-viewchild-and-contentchild
+
+The difference between @ViewChildren and @ContentChildren is that @ViewChildren look for elements in Shadow DOM while @ContentChildren look for them in Light DOM
+
+@ViewChildren == your own child ; @ContentChildren == someone's else child
+
+
+
+ng-container
+
+The Angular <ng-container> is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
+
+ng-template
+
+<ng-template> is an Angular element for rendering HTML. It is never displayed directly
+
+TemplateRef
+
+
+ngTemplateOutlet
+
+ngTemplateOutletContext
+
+ngTemplateOutlet is a directive. It instantiates a template dynamically using a template reference and context object as parameters
+
+<ng-container
+          *ngIf="
+            coverage.amount.mainInsuredAmount > 0;
+            else coveredTextTemplate
+          "
+          [ngTemplateOutlet]="coverageTemplate"
+          [ngTemplateOutletContext]="{
+            label: mainInsuredText,
+            amount: coverage.amount.mainInsuredAmount
+          }"
+        >
+        </ng-container>
+		
+		
+<ng-template #coverageTemplate let-label="label" let-amount="amount">
+  <div class="coverage__amount-wrapper" *ngIf="amount > 0">
+    <span class="coverage__role">
+      {{ label }}
+    </span>
+    <span class="coverage__amount-value"
+      >{{
+        amount
+          | cruxCurrency
+            : currencyConfig?.digitsInfo
+            : currencyConfig?.code
+            : currencyConfig?.display
+      }}
+    </span>
+  </div>
+</ng-template>
+		
+		<ng-template #coveredTextTemplate>
+  <span class="coverage__covered-text">
+    {{ coveredText }}
+  </span>
+</ng-template>
+
+
+ng-content --- https://stackblitz.com/edit/ng-content-demo-example
+
+<ng-content>  They are used to create configurable components. This is what we call Content Projection.
+<ng-container> is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+<ng-template> is a template element that Angular uses with structural directives (*ngIf, *ngFor, [ngSwitch] and custom directives
+*ngTemplateOutlet is used to insert a common template in various sections of a view and They are used as a container to templates that can be reused at multiple places.
+
+ngSwitchCase
+
+https://angular.io/api/common/NgSwitchCase
+
+async pipe
+
+With AsyncPipe we can use promises and observables directly in our template, without having to store the result on an intermediate property or variable.
+
+super keyword
+
+The super keyword can be used in expressions to reference base class properties and the base class constructor.
+
+Super calls are only permitted in constructors of derived classes
+
+Pure pipe and impure pipe
+
+A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe. An impure pipe is called for every change detection cycle no matter whether the value or parameter(s) changes
+
+
+Types of directives
+
+https://www.google.com/search?q=Custom+directives&newwindow=1&rlz=1C1GCEV_enUS904US904&sxsrf=ALeKk02Ws7AeZPepz_meCMVogRJAtAbBRQ:1614338337675&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiP8af5tofvAhUMyzgGHZPtDZUQ_AUoA3oECAYQBQ&biw=1366&bih=625#imgrc=piOwV20ELBhWaM
+
+https://www.freecodecamp.org/news/angular-directives-learn-how-to-use-or-create-custom-directives-in-angular-c9b133c24442/
+
+Custom directives @host listener,@host binding
+
+@HostBinding lets you set properties on the element or component that hosts the directive, and @HostListener lets you listen for events on the host element or component
+
+https://www.digitalocean.com/community/tutorials/angular-hostbinding-hostlistener
+
+Build in directives(Structural Directives) *ngFor,*ngIf
+
+Decorators
+@component,@injectable,@pipe,@ngModule,@Directive
+
+masking
+
+
+TypeScript
+---------
+
+Generics
+
+In TypeScript, Generics are basically a kind of tool that enables you to create reusable code components that work with a number of types instead of a single type.
+
+https://betterprogramming.pub/typescript-generics-90be93d8c292
+
+Enums
+
+Enums are one of the features TypeScript has which is not a type-level extension of JavaScript. Enums allow a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.
+
+export enum ProductType {
+  Other = 'other',
+  PersonalAccident = 'pa',
+  HomeContents = 'hc',
+  Home = 'home',
+  MobileDevices = 'mobile',
+  Travel = 'travel',
+  Dental = 'dental',
+  TravelInconvenience = 'tinc',
+  PersonalPropertyDamage = 'ppd',
+  TripCancellation = 'tc',
+  MedicalEvent = 'me',
+  PurchaseProtection = 'pp',
+  RefundProtection = 'rp',
+  BuyersAdvantage = 'ba',
+  ScreenCoverProtection = 'sc',
+  LossDamageWaiver = 'ldw',
+}
+
+
+Interface
+
+export interface UserDetails {
+  hasPolicies: boolean;
+  guidCount: number;
+  guid: string;
+  firstName: string;
+  lastName: string;
+  fullName?: string;
+  emailId: string;
+}
+
+
+Optional And Default Parameters in TypeScript
+
+https://www.logicbig.com/tutorials/misc/@Input/function-optional-and-default-params.html
+
+Namespace (Module)
+
+https://www.tutorialspoint.com/typescript/typescript_namespaces.htm
+
+
+TypeScript
+------------
+
+Class vs Object
+
+Object 
+------
+const message1 = { title: undefined, message: undefined, id: undefined };
+
+export class Message {
+    title;
+    message;
+    id;
+}
+Another way creating Object
+----
+const message2 = new Message();
+
+
+Legacy code convertion from function into class
+--------------
+
+function Message(title,message,id){
+this.title = title;
+this.message = message;
+this.id= id;
+}
+
+const message1 = new Message("Hello","Good Legacy Stuff",1);
+
+Now Es6 using class
+------
+
+export class Message {
+    title: string;
+    message: string;
+    isSent: boolean;
+
+    constructor(title: string, message: string) {
+        this.title = title;
+        this.message = message;
+        this.isSent = false;
+    }
+
+}
+
+const message = new Message(
+    'New Course!!! Just $9.99!!!',
+    'Check out our latest course on OOP with TypeScript!'
+);
+
+
+Methods in Typescript Example
+-------
+
+export class Message {
+    title: string;
+    message: string;
+    isSent: boolean;
+
+    constructor(title: string, message: string) {
+        this.title = title;
+        this.message = message;
+        this.isSent = false;
+    }
+
+    previewMessage(): string {
+        return this.message.slice(0, 10).concat('...');
+    }
+}
+
+const message = new Message(
+    'New Course!!! Just $9.99!!!',
+    'Check out our latest course on OOP with TypeScript!'
+);
+
+message.previewMessage();
+
+set and get examples in Typescript
+-----------------
+
+export class Message {
+    title: string;
+    message: string;
+    private _isSent: boolean;
+	
+	set isSent(value:boolean){
+	if(value=== true) {
+	this.deliveryDate = new Date();
+	}
+	this._isSent = value;
+	}
+	
+	get isSent():boolean {
+	return this._isSent;
+	}
+	
+	deliveryDate : Date;
+	
+    
+    constructor(title: string, message: string) {
+        this.title = title;
+        this.message = message;
+        this.isSent = false;
+    }
+
+    get messageStatus(): string {
+        const sentMessage = this.isSent ? 'Has been sent.' : 'Has not been sent.';
+
+        return `${this.message} | ${sentMessage}`;
+    }
+
+    previewMessage(): string {
+        return this.message.slice(0, 10).concat('...');
+    }
+}
+
+const message = new Message(
+    'New Course!!! Just $9.99!!!',
+    'Check out our latest course on OOP with TypeScript!'
+);
+message.isSent = true;
+message.messageStatus;
+message.previewMessage();
+
+
+_____________________---_____________________________
+
+Imp Point -----> Constructors for derived classes must contain a 'super' call.
+
+
+implements will have same shape so no need super 
+
+but for extends need super if we are using constructor 
+
+_____________________---_____________________________
+
+Inheriantence
+------
+
+Base Class and Derived Class
+
+// Base / Parent Class
+export class Animal {
+    age: number;
+    legs: number;
+    name: string;
+
+    constructor(age: number, legs: number, name: string) {
+        this.age = age;
+        this.legs = legs;
+        this.name = name;
+    }
+}
+
+// Derived / Child Class
+export class Dog extends Animal {
+    woof(): string {
+        return 'WOOF! WOOF! WOOF!';
+    }
+}
+
+// Derived / Child Class / Same Shape
+export class Cat extends Animal {
+    meow(): string {
+        return 'Meow! Meow! Meow!';
+    }
+}
+
+const dog = new Dog(2,4,"Gator");
+dog.name;
+dog.woof;
+
+
+Implement will have same shape
+----
+export class Animal {
+    age: number;
+    legs: number;
+    name: string;
+
+    constructor(age: number, legs: number, name: string) {
+        this.age = age;
+        this.legs = legs;
+        this.name = name;
+    }
+}
+
+export class Cat extends Animal {
+    constructor(data: { age: number, legs: number, name: string }) {
+        super(data.age, data.legs, data.name);
+    }
+
+    meow(): string {
+        return 'MEOW! HISS! HISS!';
+    }
+}
+
+export class Dog implements Animal {
+    age: number;
+    legs: number;
+    name: string;
+
+    woof(): string {
+        return 'WOOF! WOOF! WOOF!';
+    }
+}
+
+const dog = new Dog();
+const cat = new Cat({age:19,legs:4,name:'baby});
+console.log(dog instanceOf Animal) ---> false
+console.log(cat instanceOf Animal) ---> true
+
+
+_----------_---------
+
+
+Polymorphsim
+
+/*
+1. method / param overriding -> child overrides parent method
+2. method overloading -> same name methods (JavaScript doesn't support this)
+3. interfaces / abstract classes implements
+*/
+
+export class User {
+    firstName: string;
+    age: number;
+    email: string;
+
+    constructor(firstName: string, email: string, age: number) { }
+}
+
+class BaseUser extends User {
+    protected role: string;
+
+    public hasAllAccess(): boolean {
+        return this.role === 'Admin';
+    }
+}
+
+export class SuperAdmin extends BaseUser {
+    role = 'Admin';
+    password: string;
+
+    constructor(firstName: string, lastName: string, age: number) {
+        super(firstName, lastName, age)
+    }
+
+    // override 
+    public hasAllAccess(): boolean {
+        return true;
+    }
+
+    // overloading failure
+    // public hasAllAccess(user: User) {
+    //     return user.age > 18 && this.role;
+    // }
+}
+
+export class Guest implements User {
+    name: string;
+    age: number;
+    email: string;
+    firstName: string;
+    lastName: string;
+    middleName: string;
+
+    get fullName(): string {
+        return `${this.firstName} ${this.middleName} ${this.lastName}`;
+    }
+
+    constructor(firstName: string, lastName: string, age: number) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+}
+
+encapsulation
+------------
+
+public,private,protected,stactic and readonly in typescript
+
+
+
+
+
+
+
+
+
+let fullName = "prudhvirajmaddi"
+
+fullName.split("").filter((name,index)=>{
+return fullName.indexOf(name) !=== index  
+})
+
+let fullName = "prudhvirajmaddi"
+
+var array = [{"name":"raj","age":26},{"name":"raj","age":26},{"name":"prudhvi","age":22}]; --> _.uniqBy
+
+
+var x = [10,20,8,25];
+
+var largerst =0;
+
+for(var i=0;i<x.length;i++){
+if(x[i]>largerst){
+ largerst = x[i];
+}
+
+}
+
+x.reduce(function(a,b){
+return Math.max(a,b);
+})
+
+
+preventDefault for anchor tag ->
+
+document.getElementById("myAnchor").addEventListener("click", function(event){
+  event.preventDefault()
+});
+
+Object.assign is shallow or deep copy --> its shallow
+
+https://www.freecodecamp.org/news/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd/
+
+https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript
+
+
+
+
+
+FactSet
+
+_----------_---------
+
+function test(){
+
+return new Promise(function(resolve,reject){
+throw new Error('Whoops');
+}).catch(function(error){
+console.log("Error Detected");
+}).then(function(){
+console.log('Next...')
+});
+}
+test().then(function(){
+console.log("Promise excutionn completed")
+});
+
+_____
+
+
+function test(){
+
+console.log(a);
+console.log(foo());
+var a= 1;
+function foo(){
+return 2;
+}
+
+}
+test();
+
+______
+
+Promise.resolve(1)
+.then((x)=>x+1)
+.then((x)=>{ throw new Error('My Error')})
+.catch(()=>1)
+.then((x)=>x+1)
+.then((x)=>console.log(x))
+.catch(console.error)
+
+___________
+
+var x=1;
+var output = (function(){
+
+delete x;
+return x;
+
+})();
+
+_____
+
+
+function test(){
+console.log("Zero Argument");
+}
+function test(a){
+console.log(a)
+}
+function test(a,b){
+console.log(a,b)
+}
+test();
+test(1,2);
+test(1,2,3);
+test(1,2,3,4);
+ undefined undefined
+ 1 2
+ 1 2
+ 1 2
+
+_____
+
+(function () {
+var objA = {
+foo: 'foo',
+bar: 'bar'
+};
+var objB = {
+foo: 'foo',
+bar: 'bar'
+};
+console.log(objA == objB);
+console.log(objA === objB);
+}());
+
+_____
+
+let a,b,c,d,e;
+b = null;
+c= {};
+d = function (){};
+e='object';
+
+
+15 Lakhs FIXED
+
+1.2 Lakhs Variable
+
+Total 16.20 LPA
+
+30% ---> 4,86,000 -> 21,06,000
+
+40% ---> 6,48,000 -> 22,68,000
+
+50% ---> 8,10,000 -> 24,30,000
+
+60% ---> 9,72,000 -> 25,92,000
+
+
+
+ADP
+
+----
+
+for (var i = 0; i < 5; i++) { 
+    setTimeout(function() { console.log(i); }, i * 1000 ); 
+}
+
+
+for (let i = 0; i < 5; i++) { 
+    setTimeout(function() { console.log(i); }, i * 1000 ); 
+}
+
+
+
+var a = [1,2,3];
+
+var a = {"id":"1"};;
+
+
+function decisionType(value){
+if(Array.isArray(value)) {
+console.log("It is Array")
+return a;
+
+}
+else if((value)= Object){
+
+}
+
+
+}
+
+
+decisionType(a);
+
+
+
+numbers = [1,2,3,4,5];
+
+
+let additionOfNumbers = numbers.reduce(function(acc,current){
+return acc + current;
+}
+);
+console.log(additionOfNumbers);
+
+
+function addNumbers(numbers){
+numbers.reduce((acc,current){
+return acc + current;
+});
+
+}
+
+addNumbers(numbers); 
+
+
+
+numbers = [1,2,3,4,5];
+
+
+27.70
+
+2.7 variable
+
+1.38 pf employer
+
+1.38
+
+23.56 
+
+
+
+aysnc await
+
+
+fetchPolicies().then((resp)=>{
+console.log(resp);
+}
+)
+
+
+async function fetchPolicies()
+
+{
+const response = await fetch("/policies");
+return response;
+}
+
+
+
+Query starts with S
+
+
+db.collection.find( { qty: { $startsWith: "S" } } )
+
+L & T Infotech
+---------------
+
+function name() {
+name = "prudhvi"
+
+function display() {
+console.log(name);
+}
+display();
+
+}
+
+name();
+
+
+(function(){
+      setTimeout(()=> console.log(1),2000);
+      console.log(2);
+      setTimeout(()=> console.log(3),0);
+      console.log(4);
+     })();
+	 
+Gain Sight
+
+_____________________---_____________________________
+
+let array = [18,32,22,10,14];
+
+
+nearestResult1 = [[10,14],[14,18],[18,22]];
+
+sequenceResult2 = [[10,14],[18,22]];
+
+const nearestResult = nearestArray(array);
+
+console.log(nearestResult)
+
+/* const result = minDifference(array); */
+
+console.log(result)
+
+function nearestArray(array) {
+
+newArray = [];
+
+array.sort((a,b)=>{
+return a - b;
+})
+
+// [10,14,18,22,32];
+
+var minimum = array[1] - array[0];
+
+for(let i=0; i< arr.length; i++) {
+let min = arr[i+1] - arr[i];
+
+if(min < minimum) {
+minimum = min;
+}
+
+}
+
+for(let i =0; i< array.length; i++) {
+
+if(array[i+1]-array[i] <= minimum) {
+
+newArray.push([array[i],array[i+1]])
+
+}
+
+}
+
+return newArray;
+
+
+}
+
+function minDifference(arr) {
+
+arr.sort((a,b) => {
+return a - b; 
+});
+
+var minimumNumber = arr[1] - arr[0];
+
+for(let i=0; i< arr.length; i++) {
+let min = arr[i+1] - arr[i];
+
+if(min < minimumNumber) {
+minimumNumber = min;
+}
+
+}
+
+return minimumNumber;
+
+}
+
+

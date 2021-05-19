@@ -1,0 +1,1077 @@
+
+
+Ask ravi what is view engine Now they are Ivy engine Is AOT is view engine? and InjectionToken and viewChild,masking
+
+what is viewchild and viewchildren in angular
+
+Working with @ViewChildren is similar to @ViewChild , but the difference between the two is @ViewChildren provides a list of element references rather than returning a single reference
+
+example in this link --> https://thetiwari-tiwari01.medium.com/angular-8-viewchild-and-viewchildren-difference-in-details-with-examp-98ba5204a4a9
+
+
+viewChild vs contentChild
+
+ViewChild is used to select an element from component's template while ContentChild is used to select projected content.
+
+viewChildren vs contentChildren
+
+https://stackoverflow.com/questions/34326745/whats-the-difference-between-viewchild-and-contentchild
+
+The difference between @ViewChildren and @ContentChildren is that @ViewChildren look for elements in Shadow DOM while @ContentChildren look for them in Light DOM
+
+@ViewChildren == your own child ; @ContentChildren == someone's else child
+
+Angular 4 -- HttpInterceptor
+Angular5 -- Service workers
+Angular6 -- Internationlization(i18n)
+Angular7 --Virtual Scrolling, Drag and Drop
+Angular 8 -- Web Workers,Lazy Loading,Ivg Engine(Starting phase), Angular Firebase
+Angular 9 --- IVY as a default Compiler, ProvidedIn: 'platform'
+
+ngTemplateOutlet
+
+ngTemplateOutletContext
+
+ng-template
+
+ng-container
+
+ng-content --- https://stackblitz.com/edit/ng-content-demo-example
+
+TemplateRef
+
+ViewContainerRef
+
+ngSwitchCase
+
+
+async pipe
+
+
+@Input and @Output only for parent to child and child to parent
+or
+Between individual components also?
+
+--------
+lodash-es vs lodash
+
+https://www.learnrxjs.io/learn-rxjs/operators/filtering --- Imp for all rxjs operators
+
+pipe()
+
+An Observer is an object that can get data from a data source (an Observable). The data source pushes data to it by calling the observer's onNext().
+
+A Subscriber is an Observer that can also unsubscribe from that data source (through the Subscription interface).
+
+
+ask about promise and observable
+
+ask about of() and take(1) example
+
+ask when to use flatmap,switchmap,concatmap
+
+catchError vs throwError
+
+merge vs concat in rxjs
+
+Angular Ivy 
+
+------------------------------------------------------------------------------------------
+
+What is UntilDestroy,untilDestroyed
+
+state management
+
+rxjs/operators
+
+what is pipe,filter,tap,withLatestFrom
+
+what is map vs switchMap
+
+super keyword
+
+<ng-content>  They are used to create configurable components. This is what we call Content Projection.
+<ng-container> is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+<ng-template> is a template element that Angular uses with structural directives (*ngIf, *ngFor, [ngSwitch] and custom directives
+*ngTemplateOutlet is used to insert a common template in various sections of a view and They are used as a container to templates that can be reused at multiple places.
+
+take(1),skipWhile
+
+Lodash
+
+ isEmpty, isNil
+ 
+ catchError,throwError
+ 
+ this.editMode$.next(false); vs this.output.emit("jd")
+ 
+ 
+ purpose of enum and interfaces
+ 
+ accessors (public ,private ,protected)
+ 
+ Data reusability (HTTP_INTERCEPTORS,AuthInterceptor,CanDeactivate,HttpErrorInterceptor,genericService)
+
+git cmds for pr
+
+purpose of toPromise()
+
+
+
+
+Angular concepts
+------------------------------
+Dependency injection --> Dependency injection is the ability to add the functionality of components at runtime.
+
+View child,view children
+Pure pipe and impure pipe
+View encapsulation (none, emulated, native)
+Custom directives @host listener,@host binding
+@input and @output
+Life cycle hooks
+Shared service
+Http client,httpparams
+Interceptors
+Jwt token,access token,smsession
+Local storage,session storage
+Flex
+Build in directives(Structural Directives) *ngFor,*ngIf
+
+<ng-content>  They are used to create configurable components. This is what we call Content Projection.
+<ng-container> is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+<ng-template> is a template element that Angular uses with structural directives (*ngIf, *ngFor, [ngSwitch] and custom directives
+*ngTemplateOutlet is used to insert a common template in various sections of a view and They are used as a container to templates that can be reused at multiple places.
+--------------------
+Decorators
+@component,@injectable,@pipe,@ngModule
+Components vs directives
+Template driven and Reactive form validations.
+ngZone -- The outer zone is used by NgZone to run code outside the angular zone, it is often used when you don't want the change detection cycle to run.
+Versions of rxjs 6 stable now,typescript 3.3 stable now
+Angular 7,Ionic 4, Angular material
+
+
+Angular 7
+------------------
+
+What type of functionalities you have done in your application
+
+Load balance performance (LazyLoading,LoadChildren)
+
+Data performance and reduce burden on server( local and session storage,assets get and set)
+
+Security for routes AuthGuard,CanActivate,atob and btoa
+
+Data reusability (HTTP_INTERCEPTORS,AuthInterceptor,HttpErrorInterceptor,genericService)
+
+payments --- EBS(secure.ebs), AMEX (Authorize.net,Acceptcore.js,request.api)
+
+Core concepts and Standards To maintain in Real Time Application (10 hours)
+  ----------------------------------------------------------------
+    accessors (public ,private ,protected)
+
+    lifecycle hook
+
+    endPoints
+
+-export const List = {
+        "Login": {//login component
+            "login": "login"
+        }
+    }
+
+getServiceAll(url): Observable<any> {
+        return this.http.get(url).pipe(
+          map(resp => this.response = resp)
+        )
+      }
+     
+   websocket calls
+ 
+   config.ts
+   
+  -'flightWsTimeout':20000,//flight websocket timeout for combinations and initial.
+
+Third party angular components
+-------------------------------------------------------
+Data table
+Date picker
+Time picker
+Typeahead
+Accordion
+moment,lodash,jquery
+Filtering
+Range sliders
+Validations
+ng-idle/core,KeepAlive,Idle,ISubscription
+Payment Integration
+Amex,EBS,Authorize.net,Wallet
+
+Server side 500  error code
+
+Client side 400 error code
+
+400 Bad Request. This error indicates that the user's request contains incorrect syntax.
+401 Unauthorized. ...
+403 Forbidden. ...
+404 Not Found. ...
+500 Internal Server Error. ...
+501 Not Implemented. ...
+502 Bad Gateway. ...
+503 Service Unavailable.
+
+ECMAScript 5 Features (ES5)
+---------------------
+
+The "use strict" Directive
+String.trim()
+Array.forEach()
+Array.map()
+Array.filter()
+Array.reduce()
+JSON.stringify()
+JSON.parse()
+indexOf()
+lastIndexOf()
+
+ES 6 Features
+--------------
+
+New features in ES6.
+
+JavaScript let
+JavaScript const
+JavaScript Arrow Functions
+JavaScript Classes
+for...Of
+Default parameter values
+Rest and Spread operators (…)
+Array.find()
+Array.findIndex()
+Template Literals
+Promises
+
+ES7
+----
+
+EXPONENTIATION OPERATOR (**): console.log(3**2) result 9
+
+INCLUDES():
+Returns true if an array includes a value, if not returns false.
+
+ES 8 features
+-------------
+
+async/await
+
+// Object literal
+Object.entries({ 'a': 'A', 'b': 'B' }); // [["a","A"],["b","B"]]
+
+// String
+Object.entries('david') // [["0","d"],["1","a"],["2","v"],["3","i"],["4","d"]]
+
+Typescript
+----------
+
+Decorators
+Abstract classes
+Namespace (Module)
+Enums
+Generics and Static typing
+Interfaces
+Access modifiers
+Optional properties and arguments
+Function overloads
+Default parameters
+Readonly
+
+TypeScript supports all primitive data types
+
+Support enum
+
+enum Direction {
+    Up = 1,
+    Down,
+    Left,
+    Right,
+}
+
+enum Response {
+    No = 0,
+    Yes = 1,
+}
+
+function respond(recipient: string, message: Response): void {
+    // ...
+}
+
+respond("Princess Caroline", Response.Yes)
+
+enum Direction {
+    Up = "UP",
+    Down = "DOWN",
+    Left = "LEFT",
+    Right = "RIGHT",
+}
+
+
+
+items.filter(item=>{
+
+return item!==valueNotNeed.includes(item)
+
+})
+
+item.split("").reverse().join()
+
+
+
+JavaScript
+
+prototype --------- Object holds property and methods (Inheriantence) Al hi tol JavaScript objects inherit properties and methods from a prototype.
+Closure ---- Data Privacy during event handlers and callbacks, Global variables can be made local (private) with closures.
+Call,apply,bind ---- Holds this reference
+Call back -- Asynchronous purpose
+Observables -- RXJS,Asynchronous purpose
+Promises -- ES6,Asynchronous purpose
+Async & Await -- ES8 Syntactic sugar of promise,Asynchronous purpose
+IIFE(anonymous self-invoking function) -- Data privacy and can't access outside world
+Hoisting -- Moving Declarations to top before code excution
+Map vs reduce vs filter
+Undeclared and undefined variables
+this keyword in JavaScript
+Curring,bubbling, capturing(trickling)
+First class Function --- A function can be assigned to a variable,A function can be passed as an argument,A function can be returned from other function(High Order Function).
+== Vs ===
+Void(0) -- Mostly used <a> for eliminating refresh side effects
+Object literal ---- Comma separated list of name value pairs wrapped in curly braces
+Object constructor ---- var exp = new Object();
+Stack - push,pop,shift,unshift
+Queue - enqueue,dequeue,front,rear
+Rest paramter,spread operator (...)
+Slice and splice --- Slice returns new array but splice effect on orginal array
+Function level scope,global scope --- let and var
+Foreach,for of,for in
+
+for…of to iterate over the values in an iterable, like an array
+
+for (let animal of animals) {
+
+console.log(animal)
+}
+
+ for…in to iterate over the properties of an object (the object keys):
+
+let oldCar = {
+  make: 'Toyota',
+  model: 'Tercel',
+  year: '1996'
+};
+
+for (let key in oldCar) {
+  console.log(`${key} --> ${oldCar[key]}`);
+}
+
+// make --> Toyota
+// model --> Tercel
+
+Shallow copying,deep copying ---- Reference same object in shallow , Reference different objects in deep
+Design patterns
+----_----------_---------
+Creational pattern
+- constructor pattern, Singleton pattern, prototype pattern
+
+Structural pattern
+- decorator pattern
+
+Behavior pattern
+- iterator pattern,observable pattern
+
+Singleton
+
+A singleton service is a service for which only one instance exists in an app.
+
+There are two ways to make a service a singleton in Angular:
+
+Declare root for the value of the @Injectable() providedIn property
+Include the service in the AppModule or in a module that is only imported by the AppModule
+
+Scss
+--------
+mixins,variable,@import,@include
+
+The @mixin directive lets you create CSS code that is to be reused throughout the website.
+
+The @include directive is created to let you use (include) the mixin.
+
+@extend directive lets you share a set of CSS properties from one selector to another.
+
+.button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: red;
+}
+
+Psuedo classes( n th child,:link,:visited,:hover) psuedo elements(::first line,::first letter,::after,::before)
+Position relative( based on itself) and absolute ( based on parent ancestors)
+How you can make span tag as div nature
+
+div is block level, span is inline level
+
+Es6
+-------
+Template string
+Cloning Object --> Object.assign()
+Fat arrow function --- No binding of ‘this’
+Object destructing
+
+Destructuring simply implies breaking down a complex structure into simpler parts
+
+const student = {
+    firstname: 'Glad',
+    lastname: 'Chinda',
+    country: 'Nigeria'
+};
+
+// Object Destructuring
+const { firstname, lastname, country } = student;
+
+console.log(firstname, lastname, country); // Glad Chinda Nigeria
+
+Array destructing
+
+const numbers = [1,2,3];
+const [one, two, three] = numbers;
+console.log(one); // 1
+console.log(two); // 2
+console.log(three); // 3
+
+Let( block level scope)
+
+Const --- Variables defined with const behave like let variables, except they cannot be reassigned:
+
+Rxjs
+______
+Subject
+Behavior subject
+Replay subject
+
+A BehaviorSubject holds one value(It holds previous value). When it is subscribed it emits the value immediately.BehaviorSubject can be created with initial value: new Rx.BehaviorSubject(1)
+
+A Subject doesn't hold a value.
+
+Debouncetime in rxjs
+Flatmap
+Forkjoin
+
+
+Karma and Jasmine
+-----------------
+
+TestBed -- is the most important of the Angular testing utilities. That can have most of the properties of an @NgModule.
+
+fixture -- is a wrapper for a component and it's template. We create an instance of a component fixture through the TestBed
+
+Describe (test Suite)
+
+it (test spec)
+
+Setup and Tear down --- (beforeall,afterall)-- for describe , (beforeeach,aftereach) -- for it
+
+DebugElement ---  provides crucial insights into the component's DOM representation.
+
+Isolation Testing -- Pipes are easy to test without the Angular testing utilities.
+
+fdescribe and fit (run only specific tests)
+
+xdescribe and xit (skip the test )
+
+Spy -- is a feature of Jasmine which lets you take an existing class, function, object and mock it in such a way that you can control what gets returned from functions.
+
+Jasmine comes with a few pre-built matchers like so:
+
+expect(array).toContain(member);
+expect(fn).toThrow(string);
+expect(fn).toThrowError(string);
+expect(instance).toBe(instance);
+expect(mixed).toBeDefined();
+expect(mixed).toBeFalsy();
+expect(mixed).toBeNull();
+expect(mixed).toBeTruthy();
+expect(mixed).toBeUndefined();
+expect(mixed).toEqual(mixed);
+expect(mixed).toMatch(pattern);
+expect(number).toBeCloseTo(number, decimalPlaces);
+expect(number).toBeGreaterThan(number);
+expect(number).toBeLessThan(number);
+expect(number).toBeNaN();
+expect(spy).toHaveBeenCalled();
+expect(spy).toHaveBeenCalledTimes(number);
+expect(spy).toHaveBeenCalledWith(...arguments);
+
+Node JS
+----------------
+
+Node js -- Is used for Microservices / API’s,Real-Time Web Applications,General Purpose Applications,Network Applications,Distributed Systems
+
+Event loop -- Event loop in Node.js handles all the asynchronous callbacks in an application (or) In Node Js processes are single threaded, to supports concurrency it uses events and callbacks. An event loop is a mechanism that allows Node.js to perform non-blocking I/O operations.
+
+REPL in Node.js stands for Read, Eval, Print, and Loop.
+
+Test pyramid -- basically is a diagram that describes the ratio of how many unit tests, integration tests, and end-to-end test are required to be written for the successful development of the project.
+
+Callback Hell --  It typically contains multiple nested callback functions which in turn make the code hard to read and debug.
+
+Libuv -- Is a multi-platform support library of Node.js which majorly is used for asynchronous I/O(Asynchronous file & file system operations and Asynchronous TCP & UDP sockets)
+
+Globals Objects are the objects which are global in nature and are available in all the modules of the application. You can use these objects directly in your application, rather than having to include them explicitly. The global objects can be modules, functions, strings, object, etc
+
+Buffer Class -- Storing the raw data it corresponds  raw memory allocation that is located outside the V8 heap. It is a global class that is easily accessible can be accessed in an application without importing a buffer module.
+
+List types of Http requests?
+
+GET: The GET method asked for the representation of the specifies resource. This request used to retrieve the data.
+POST: The POST technique is utilized to present an element to the predetermined resource, generally causing a change in state or reactions on the server.
+HEAD: The HEAD method is similar to the GET method but asks for the response without the response body.
+PUT: This method is used to substitute all current representations with the payload.
+DELETE: It is used to delete the predetermined resource.
+CONNECT: This request is used to settle the TCP/IP tunnel to the server by the target resource
+OPTION: This method is used to give back the HTTP strategies to communicate with the target resource.
+TRACE: This method echoes the message which tells the customer how much progressions have been made by an intermediate server.
+PATCH: The PATCH method gives partial modifications to a resource
+
+The arguments which are available to an Express JS route handler-function are-
+
+Req – the request object
+Res – the response object
+Next (optional) – a function which is used to pass control to one of the subsequent route handlers.
+
+Below are the few reasons why to use Express with Node.js
+
+Express js is built on top of Node.js. It is the perfect framework for ultra-fast Input / Output.
+Cross Platform
+Support MVC Design pattern
+Support of NoSQL databases out of the box.
+Multiple templating engine support i.e. Jade or EJS which reduces the amount of HTML code you have to write for a page.
+Support Middleware, basic web-server creation, and easy routing tools.
+
+Use below code to enable CORS on NodeJS
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+What Is Chaining Process In Node.Js?
+
+It’s an approach to connect the output of one stream to the input of another stream, thus creating a chain of multiple stream operations.
+
+What Is A Control Flow Function? What Are The Steps Does It Execute?
+
+It is a generic piece of code which runs in between several asynchronous function calls is known as control flow function.
+
+It executes the following steps.
+
+Control the order of execution.
+Collect data.
+Limit concurrency.
+Call the next step in the program.
+
+List of Folders have to maintain
+
+1) config
+2) middleware
+3) routes
+4) models
+5) db
+6) cors
+
+Express.js Middleware
+
+Following is a list of possibly used middleware in Express.js app:
+
+Application-level middleware ---  app.use()
+Router-level middleware ---  express.Router()
+Error-handling middleware --- app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
+
+Built-in middleware -- express.static
+Third-party middleware -- var cookieParser = require('cookie-parser')
+
+
+Creating restful services using middleware routes express concept .
+
+Providing secruity for services using jsonwebtoken using middleware next express concept.
+
+Validation at server side using joi validation.
+
+Login functionality using bcrypt,hash,salt module.
+
+Pushing into GitHub and deploying into AWS
+
+Creating microservices for offering scalability. For individually running of services.
+
+
+
+Mongoose to connect db and create schema.
+
+Async await
+
+Promises
+
+req.body
+
+req.headers
+
+res.send
+
+res.status
+
+// get query&params in express //etc.
+example.com/user/000000?sex=female
+
+app.get('/user/:id', function(req, res) { const query = req.query;// query = {sex:"female"} const params = req.params; //params = {id:"000000"} })
+
+MongoDb
+----------------
+
+Sharding
+Replication
+
+ACID properties
+
+Atomicity is an all-or-none proposition.
+
+Consistency guarantees that a transaction never leaves your database in a half-finished state.
+
+Isolation keeps transactions separated from each other until they’re finished.
+
+Durability guarantees that the database will keep track of pending changes in such a way that the server can recover from an abnormal termination.
+
+Aggregation
+index
+GridFS
+Embedded documents
+Cluster
+MongoDb crud operations
+Query Selectors
+--------------------------
+Comparison¶
+
+$eq Matches values that are equal to a specified value.
+$gt Matches values that are greater than a specified value.
+$gte Matches values that are greater than or equal to a specified value.
+$in Matches any of the values specified in an array.
+$lt Matches values that are less than a specified value.
+$lte Matches values that are less than or equal to a specified value.
+$ne Matches all values that are not equal to a specified value.
+$nin Matches none of the values specified in an array.
+
+Logical¶
+
+$and Joins query clauses with a logical AND returns all documents that match the conditions of both clauses.
+$not Inverts the effect of a query expression and returns documents that do not match the query expression.
+$nor Joins query clauses with a logical NOR returns all documents that fail to match both clauses.
+$or Joins query clauses with a logical OR returns all documents that match the conditions of either clause.
+
+Element¶
+
+$exists Matches documents that have the specified field.
+$type Selects documents if a field is of the specified type.
+
+Evaluation¶
+
+$regex Selects documents where values match a specified regular expression.
+$text Performs text search.
+$where Matches documents that satisfy a JavaScript expression.
+
+Join in MongoDb
+----_--------__----------
+$lookup:
+       {
+         from: 'products',
+         localField: 'product_id',
+         foreignField: '_id',
+         as: 'orderdetails'
+       }
+
+Need to write still are there
+
+css links
+---------
+
+flex box --- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+position absolute vs relative --- https://dzone.com/articles/css-position-relative-vs-position-absolute  
+
+right property for position absolute --- https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_right
+
+
+
+array.filter((item, index) => array.indexOf(item) === index);
+
+for(var i = 5; i >= 1; i--) {
+
+      for(var j = i; j>= 1; j--) {
+
+        document.write("*");  
+
+      }
+
+      document.write("<br/>");
+}
+
+for(var i = 1; i <= 5; i++) {
+
+      for(var j = 1; j<= i; j++) {
+
+        document.write("*");  
+
+      }
+
+      document.write("<br/>");
+}
+
+
+function Counter() {
+    var counter = 0;
+
+    function IncreaseCounter() {
+        return counter += 1;
+    };
+
+    return IncreaseCounter;
+}
+
+var counter = Counter();
+counter(); // 1
+counter()
+counter()
+counter()
+
+function celebrityID () {
+    var celebrityID = 999;
+    // We are returning an object with some inner functions
+    // All the inner functions have access to the outer function's variables
+    return {
+        getID: function ()  {
+            // This inner function will return the UPDATED celebrityID variable
+            // It will return the current value of celebrityID, even after the changeTheID function changes it
+          return celebrityID;
+        },
+        setID: function (theNewID)  {
+            // This inner function will change the outer function's variable anytime
+            celebrityID = theNewID;
+        }
+    }
+
+}
+
+var mjID = celebrityID (); // At this juncture, the celebrityID outer function has returned.
+mjID.getID(); // 999
+mjID.setID(567); // Changes the outer function's variable
+mjID.getID(); // 567: It returns the updated celebrityId variable
+
+
+
+Stop propagation
+Prevent default
+Cookies
+Error handling
+
+
+
+
+TypeScript
+------------
+
+Class vs Object
+
+Object 
+------
+const message1 = { title: undefined, message: undefined, id: undefined };
+
+export class Message {
+    title;
+    message;
+    id;
+}
+Another way creating Object
+----
+const message2 = new Message();
+
+
+Legacy code convertion from function into class
+--------------
+
+function Message(title,message,id){
+this.title = title;
+this.message = message;
+this.id= id;
+}
+
+const message1 = new Message("Hello","Good Legacy Stuff",1);
+
+Now Es6 using class
+------
+
+export class Message {
+    title: string;
+    message: string;
+    isSent: boolean;
+
+    constructor(title: string, message: string) {
+        this.title = title;
+        this.message = message;
+        this.isSent = false;
+    }
+
+}
+
+const message = new Message(
+    'New Course!!! Just $9.99!!!',
+    'Check out our latest course on OOP with TypeScript!'
+);
+
+
+Methods in Typescript Example
+-------
+
+export class Message {
+    title: string;
+    message: string;
+    isSent: boolean;
+
+    constructor(title: string, message: string) {
+        this.title = title;
+        this.message = message;
+        this.isSent = false;
+    }
+
+    previewMessage(): string {
+        return this.message.slice(0, 10).concat('...');
+    }
+}
+
+const message = new Message(
+    'New Course!!! Just $9.99!!!',
+    'Check out our latest course on OOP with TypeScript!'
+);
+
+message.previewMessage();
+
+set and get examples in Typescript
+-----------------
+
+export class Message {
+    title: string;
+    message: string;
+    private _isSent: boolean;
+	
+	set isSent(value:boolean){
+	if(value=== true) {
+	this.deliveryDate = new Date();
+	}
+	this._isSent = value;
+	}
+	
+	get isSent():boolean {
+	return this._isSent;
+	}
+	
+	deliveryDate : Date;
+	
+    
+    constructor(title: string, message: string) {
+        this.title = title;
+        this.message = message;
+        this.isSent = false;
+    }
+
+    get messageStatus(): string {
+        const sentMessage = this.isSent ? 'Has been sent.' : 'Has not been sent.';
+
+        return `${this.message} | ${sentMessage}`;
+    }
+
+    previewMessage(): string {
+        return this.message.slice(0, 10).concat('...');
+    }
+}
+
+const message = new Message(
+    'New Course!!! Just $9.99!!!',
+    'Check out our latest course on OOP with TypeScript!'
+);
+message.isSent = true;
+message.messageStatus;
+message.previewMessage();
+
+
+_____________________---_____________________________
+
+Imp Point -----> Constructors for derived classes must contain a 'super' call.
+
+
+implements will have same shape so no need super 
+
+but for extends need super if we are using constructor 
+
+_____________________---_____________________________
+
+Inheriantence
+------
+
+Base Class and Derived Class
+
+// Base / Parent Class
+export class Animal {
+    age: number;
+    legs: number;
+    name: string;
+
+    constructor(age: number, legs: number, name: string) {
+        this.age = age;
+        this.legs = legs;
+        this.name = name;
+    }
+}
+
+// Derived / Child Class
+export class Dog extends Animal {
+    woof(): string {
+        return 'WOOF! WOOF! WOOF!';
+    }
+}
+
+// Derived / Child Class / Same Shape
+export class Cat extends Animal {
+    meow(): string {
+        return 'Meow! Meow! Meow!';
+    }
+}
+
+const dog = new Dog(2,4,"Gator");
+dog.name;
+dog.woof;
+
+
+Implement will have same shape
+----
+export class Animal {
+    age: number;
+    legs: number;
+    name: string;
+
+    constructor(age: number, legs: number, name: string) {
+        this.age = age;
+        this.legs = legs;
+        this.name = name;
+    }
+}
+
+export class Cat extends Animal {
+    constructor(data: { age: number, legs: number, name: string }) {
+        super(data.age, data.legs, data.name);
+    }
+
+    meow(): string {
+        return 'MEOW! HISS! HISS!';
+    }
+}
+
+export class Dog implements Animal {
+    age: number;
+    legs: number;
+    name: string;
+
+    woof(): string {
+        return 'WOOF! WOOF! WOOF!';
+    }
+}
+
+const dog = new Dog();
+const cat = new Cat({age:19,legs:4,name:'baby});
+console.log(dog instanceOf Animal) ---> false
+console.log(cat instanceOf Animal) ---> true
+
+
+_----------_---------
+
+
+Polymorphsim
+
+/*
+1. method / param overriding -> child overrides parent method
+2. method overloading -> same name methods (JavaScript doesn't support this)
+3. interfaces / abstract classes implements
+*/
+
+export class User {
+    firstName: string;
+    age: number;
+    email: string;
+
+    constructor(firstName: string, email: string, age: number) { }
+}
+
+class BaseUser extends User {
+    protected role: string;
+
+    public hasAllAccess(): boolean {
+        return this.role === 'Admin';
+    }
+}
+
+export class SuperAdmin extends BaseUser {
+    role = 'Admin';
+    password: string;
+
+    constructor(firstName: string, lastName: string, age: number) {
+        super(firstName, lastName, age)
+    }
+
+    // override 
+    public hasAllAccess(): boolean {
+        return true;
+    }
+
+    // overloading failure
+    // public hasAllAccess(user: User) {
+    //     return user.age > 18 && this.role;
+    // }
+}
+
+export class Guest implements User {
+    name: string;
+    age: number;
+    email: string;
+    firstName: string;
+    lastName: string;
+    middleName: string;
+
+    get fullName(): string {
+        return `${this.firstName} ${this.middleName} ${this.lastName}`;
+    }
+
+    constructor(firstName: string, lastName: string, age: number) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+}
+
+encapsulation
+------------
+
+public,private,protected,stactic and readonly in typescript
