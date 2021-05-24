@@ -3,4 +3,4 @@ import './style.css';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter Reports</h1>`;
+appDiv.innerHTML = `<h1>JS Starter Reportss</h1>`;
